@@ -1,0 +1,84 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Header Styling */
+  header {
+    margin-bottom: 30px;
+  }
+  
+  h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 1.2em;
+  }
+  
+  /* Bubble Container */
+  .bubble-container {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 20px auto;
+  }
+  
+  /* Bubble Styling */
+  .bubble {
+    width: 100px;
+    height: 100px;
+    background-color: #3498db;
+    border-radius: 50%;
+    margin: auto;
+    animation: breathe 4s infinite alternate;
+    transition: background-color 0.5s;
+  }
+  
+  /* Hover effect to change bubble color slightly */
+  .bubble:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Button Styling */
+  button {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    background-color: #3498db;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Keyframes for Breathing Animation */
+  @keyframes breathe {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(2);
+    }
+  }
+  

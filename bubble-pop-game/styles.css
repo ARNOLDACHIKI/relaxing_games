@@ -1,0 +1,53 @@
+/* General body styles */
+body {
+    margin: 0;
+    background: linear-gradient(to bottom, #87CEEB, #fff);
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Scoreboard styling */
+  #scoreboard {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px 15px;
+    border-radius: 5px;
+    z-index: 100;
+    font-size: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Game area styling */
+  #game-area {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  /* Bubble styling */
+  .bubble {
+    width: 50px;
+    height: 50px;
+    background: radial-gradient(circle, white 60%, #d9d9d9);
+    border-radius: 50%;
+    position: absolute;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    animation: float 4s ease-in-out infinite;
+  }
+  
+  /* Bubble float animation */
+  @keyframes float {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+  
